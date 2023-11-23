@@ -1,17 +1,14 @@
 #include<stdio.h>
-void demo_1(void)
-{
-	int a = 10;
-	int* p = &a;
-	// pointer arthmetic (+1¬O+¤@­Ó¾ã¼Æ 4bytes
-	printf("Address of p is %d \n", p);
-	printf("size of integer is %d\n", sizeof(int));
-	printf("Adress of p+1 is %d \n", p + 1);
-	printf("value of *p is %d\n", *p); //¤wª¾ a =10
-	printf("value of *p+1 is %d\n", *(p + 1)); // ¦ı¨Ï¥Î*(p+1) != 11 ­nª`·N
-}
+// pointer arthemetic 
+//typecasting
 int main(void)
 {
-	demo_1;
-	return 0; 
+int a = 10;
+int* p = &a;
+printf("Address of p is %d \n", p);
+printf("size of integer is %d\n", sizeof(int));
+printf("Adress of p+1 is %d \n", p + 1);
+printf("value of *p is %d\n", *p); //å·²çŸ¥ a =10
+printf("value of *p+1 is %d\n", *(p + 1)); // ä½†ä½¿ç”¨*(p+1) != 11 è¦æ³¨æ„
+return 0; 
 }
